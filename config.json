@@ -21,7 +21,7 @@
     },
     "upstreamApp": {
         "target": "https://cmp-dev2-batch-compasdev2.ocp-ctc-core-nonprod.optum.com",
-        "logon": "/public/logon/index.html",
+        "logon": "/public/logon",
         "logoff": "/public/logoff",
         "home": "/welcome",
         "filters": [
