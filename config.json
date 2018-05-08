@@ -3,8 +3,7 @@
         "port": 8080,
         "localAddress": "127.0.0.1",
         "changeOrigin": true,
-        "xfwd": true,
-        "hostRewrite": ""
+        "xfwd": true
     },
     "siteminder": {
         "sm_cookie": "SMSESSION",
