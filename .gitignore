@@ -1,0 +1,13 @@
+# Sublime Text 2 files
+.DS_Store
+
+node_modules
+coverage
+
+docs
+
+npm-debug.log
+
+# IntelliJ files
+.idea
+*.iml

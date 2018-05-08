@@ -1,0 +1,1 @@
+grep -q 'registry = ' ${OPENSHIFT_HOMEDIR}.npmrc || echo 'registry = http://repo1sandbox.uhc.com/artifactory/api/npm/npm-virtual' >> ${OPENSHIFT_HOMEDIR}.npmrc

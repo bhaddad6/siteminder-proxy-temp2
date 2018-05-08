@@ -1,0 +1,63 @@
+{
+    "proxy": {
+        "port": 8080,
+        "localAddress": "127.0.0.1",
+        "changeOrigin": true,
+        "xfwd": true,
+        "hostRewrite": ""
+    },
+    "siteminder": {
+        "sm_cookie": "SMSESSION",
+        "sm_cookie_domain": "",
+        "formcred_cookie": "FORMCRED",
+        "formcred_cookie_domain": "",
+        "userid_field": "USERNAME",
+        "password_field": "PASSWORD",
+        "target_field": "TARGET",
+        "session_expiry_minutes": 20,
+        "max_login_attempts": 3,
+        "smagentname": "",
+        "login_fcc": "/public/siteminderagent/login.fcc"
+    },
+    "upstreamApp": {
+        "target": "https://cmp-dev2-batch-compasdev2.ocp-ctc-core-nonprod.optum.com",
+        "logon": "/public/logon/index.html",
+        "logoff": "/public/logoff",
+        "home": "/welcome",
+        "filters": [
+            {   "path": "/etc/clientlibs/*",
+                "protected": false
+                },
+            {   "path": "/libs/granite/core/*",
+                "protected": false
+                },
+            {
+                "path": "/*",
+                "protected": true
+                }
+            ],
+                "ignoreExt": [".css",".js", ".gif", ".jpeg", ".png"]
+    },
+    "users": [
+        {
+            "name": "admin",
+            "password": "admin",
+            "auth_headers": {
+                "client-id": "admin",
+                "SM_USER": "admin"
+            },
+            "login_attempts": 0,
+            "locked": false
+  },
+        {
+            "name": "aparker@geometrixx.info",
+            "password": "password",
+            "auth_headers": {
+                "SM_USER": "aparker@geometrixx.info"
+            },
+            "login_attempts": 0,
+            "locked": false
+  }
+
+  ]
+}
