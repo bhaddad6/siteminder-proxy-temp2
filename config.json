@@ -1,7 +1,7 @@
 {
     "proxy": {
         "port": 8080,
-        "localAddress": "10.204.120.12",
+        "localAddress": "127.0.0.1",
         "changeOrigin": true,
         "xfwd": true
     },
