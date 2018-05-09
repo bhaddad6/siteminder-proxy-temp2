@@ -1,7 +1,7 @@
 {
     "proxy": {
         "port": 8080,
-        "localAddress": "127.0.0.1",
+        "localAddress": "10.204.120.12",
         "changeOrigin": true,
         "xfwd": true
     },
@@ -22,7 +22,7 @@
         "target": "https://cmp-dev2-batch-compasdev2.ocp-ctc-core-nonprod.optum.com",
         "logon": "/public/logon",
         "logoff": "/public/logoff",
-        "home": "/welcome",
+        "home": "/emp/empsrv",
         "filters": [
             {   "path": "/etc/clientlibs/*",
                 "protected": false
